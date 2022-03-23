@@ -5,15 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.coder.challengechapter3binar.databinding.FragmentScreen2Binding
 
 class FragmentScreen2 : Fragment() {
+    private var _binding: FragmentScreen2Binding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_screen2, container, false)
+        _binding = FragmentScreen2Binding.inflate(inflater, container, false)
+        return binding.root
     }
 
 }
