@@ -1,5 +1,6 @@
 package com.coder.challengechapter3binar
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,17 +14,18 @@ class FragmentScreenThree : Fragment() {
     private var _binding: FragmentScreenThreeBinding? = null
     private val binding get() = _binding!!
 
-    val args: FragmentScreenThreeArgs by navArgs()
+    private val args: FragmentScreenThreeArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentScreenThreeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

@@ -14,12 +14,12 @@ class FragmentScreenFour : Fragment() {
     private var _binding: FragmentScreenFourBinding? = null
     private val binding get() = _binding!!
 
-    val args: FragmentScreenFourArgs by navArgs()
+    private val args: FragmentScreenFourArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentScreenFourBinding.inflate(inflater, container, false)
         return binding.root
@@ -35,19 +35,25 @@ class FragmentScreenFour : Fragment() {
             val jam = binding.etJam.text.toString()
             val biaya = binding.etBiaya.text.toString()
 
-            if (alat.isEmpty()) {
-                Toast.makeText(requireContext(), "Kolom Nama Peralatan Elektronik Masih Kosong", Toast.LENGTH_SHORT).show()
-            } else if (watt.isEmpty()) {
-                Toast.makeText(requireContext(), "Kolom Daya Alat Elektronik Masih Kosong", Toast.LENGTH_SHORT).show()
-            } else if (jam.isEmpty()) {
-                Toast.makeText(requireContext(), "Kolom Pemakaian Alat Elektronik Masih Kosong", Toast.LENGTH_SHORT).show()
-            } else if (biaya.isEmpty()) {
-                Toast.makeText(requireContext(), "Kolom Biaya Per kWh Masih Kosong", Toast.LENGTH_SHORT).show()
-            } else {
-                val dataBiayaListrik = BiayaListrik(alat, watt.toDouble(), jam.toDouble(), biaya.toDouble())
+            when {
+                alat.isEmpty() -> {
+                    Toast.makeText(requireContext(), "Kolom Nama Peralatan Elektronik Masih Kosong", Toast.LENGTH_SHORT).show()
+                }
+                watt.isEmpty() -> {
+                    Toast.makeText(requireContext(), "Kolom Daya Alat Elektronik Masih Kosong", Toast.LENGTH_SHORT).show()
+                }
+                jam.isEmpty() -> {
+                    Toast.makeText(requireContext(), "Kolom Pemakaian Alat Elektronik Masih Kosong", Toast.LENGTH_SHORT).show()
+                }
+                biaya.isEmpty() -> {
+                    Toast.makeText(requireContext(), "Kolom Biaya Per kWh Masih Kosong", Toast.LENGTH_SHORT).show()
+                }
+                else -> {
+                    val dataBiayaListrik = BiayaListrik(alat, watt.toDouble(), jam.toDouble(), biaya.toDouble())
 
-                val actionToScreen3 = FragmentScreenFourDirections.actionFragmentScreenFourToFragmentScreenThree(nama, dataBiayaListrik)
-                it.findNavController().navigate(actionToScreen3)
+                    val actionToScreen3 = FragmentScreenFourDirections.actionFragmentScreenFourToFragmentScreenThree(nama, dataBiayaListrik)
+                    it.findNavController().navigate(actionToScreen3)
+                }
             }
         }
     }

@@ -1,4 +1,4 @@
-<?xml version="one.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,7 +11,7 @@
         android:id="@+id/tv_screen_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Screen 1"
+        android:text="@string/screen_1"
         android:textStyle="bold"
         android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/btn_screen_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go To Screen 2"
+        android:text="@string/go_to_screen_2"
         app:layout_constraintTop_toBottomOf="@id/tv_screen_one"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

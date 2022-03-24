@@ -11,7 +11,7 @@
         android:id="@+id/tv_screen_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Screen 2"
+        android:text="@string/screen_2"
         android:textStyle="bold"
         android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -27,14 +27,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_screen_two"
         android:layout_marginBottom="12dp"
-        android:hint="Masukkan Nama"
-        android:inputType="textPersonName" />
+        android:hint="@string/masukkan_nama"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btn_screen_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go To Screen 3"
+        android:text="@string/go_to_screen_3"
         app:layout_constraintTop_toBottomOf="@id/tv_screen_two"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
