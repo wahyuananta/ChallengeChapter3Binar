@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentScreenFour">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_screen_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Screen 3"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="Nama Kamu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_detail"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:text="Detail Peralatan"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_biaya_listrik"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_biaya_listrik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rincian Biaya Listrik"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_biaya_per_hari"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_biaya_per_hari"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:text="Biaya Listrik Per Hari"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_biaya_per_bulan"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_biaya_per_bulan"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:text="Biaya Listrik Per Bulan"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_biaya_Per_Tahun"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_biaya_Per_Tahun"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:text="Biaya Listrik Per Tahun"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_screen_3"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btn_screen_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Screen 4"
+        app:layout_constraintTop_toBottomOf="@id/tv_screen_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

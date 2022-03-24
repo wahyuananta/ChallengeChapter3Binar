@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.coder.challengechapter3binar.databinding.FragmentScreen1Binding
 
-class FragmentScreen1 : Fragment() {
+class FragmentScreenOne : Fragment() {
     private var _binding: FragmentScreen1Binding? = null
     private val binding get() = _binding!!
 
