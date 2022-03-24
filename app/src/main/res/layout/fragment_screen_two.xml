@@ -21,21 +21,30 @@
 
     <EditText
         android:id="@+id/et_nama"
-        android:layout_width="384dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_screen_two"
         android:layout_marginBottom="12dp"
         android:hint="@string/masukkan_nama"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:inputType="textPersonName"
         android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/btn_screen_two"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:text="@string/go_to_screen_3"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
         app:layout_constraintTop_toBottomOf="@id/tv_screen_two"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

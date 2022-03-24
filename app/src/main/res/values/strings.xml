@@ -20,6 +20,6 @@
     <string name="daya_alat_elektronik_watt">Daya alat elektronik (Watt)</string>
     <string name="pemakaian_alat_elektronik_jam_hari">Pemakaian alat elektronik (Jam/Hari)</string>
     <string name="biaya_per_kwh_rp">Biaya Per kWh (Rp)</string>
-    <string name="catatan">*Catatan \n - Daya Listrik 450 watt Subsidi : Rp 169/kWh \n - Daya Listrik 900 watt : Rp 1352/kWh \n - Daya Listrik 1300 watt+ : Rp 1444.7/kWh \n - Daya Listrik Bisnis : Rp 1114.74/kWh</string>
+    <string name="catatan">*Catatan \n- Daya Listrik 450 watt Subsidi : Rp169/kWh \n- Daya Listrik900 watt : Rp1352/kWh \n- Daya Listrik 1300 watt+ : Rp1444.7/kWh \n- Daya Listrik Bisnis : Rp1114.74/kWh</string>
     <string name="back_to_screen_3">Back To Screen 3</string>
 </resources>

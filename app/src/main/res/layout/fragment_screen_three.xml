@@ -38,6 +38,11 @@
         android:text="@string/detail_peralatan"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:background="@drawable/edit_text_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tv_biaya_listrik"
@@ -62,10 +67,15 @@
         android:text="@string/biaya_listrik_per_hari"
         android:textStyle="bold"
         android:textSize="16sp"
+        android:background="@drawable/edit_text_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tv_biaya_per_bulan"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="6dp"/>
 
     <TextView
         android:id="@+id/tv_biaya_per_bulan"
@@ -74,10 +84,15 @@
         android:text="@string/biaya_listrik_per_bulan"
         android:textStyle="bold"
         android:textSize="16sp"
+        android:background="@drawable/edit_text_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tv_biaya_Per_Tahun"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="6dp"/>
 
     <TextView
         android:id="@+id/tv_biaya_Per_Tahun"
@@ -86,6 +101,11 @@
         android:text="@string/biaya_listrik_per_tahun"
         android:textStyle="bold"
         android:textSize="16sp"
+        android:background="@drawable/edit_text_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_screen_three"
@@ -93,9 +113,12 @@
 
     <Button
         android:id="@+id/btn_screen_three"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:text="@string/go_to_screen_4"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
         app:layout_constraintTop_toBottomOf="@id/tv_screen_three"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

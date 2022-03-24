@@ -21,9 +21,12 @@
 
     <Button
         android:id="@+id/btn_screen_one"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:text="@string/go_to_screen_2"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
         app:layout_constraintTop_toBottomOf="@id/tv_screen_one"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -21,10 +21,16 @@
 
     <EditText
         android:id="@+id/et_alat_elektronik"
-        android:layout_width="384dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:hint="@string/nama_peralatan_elektronik"
         android:inputType="text"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/et_watt"
@@ -33,10 +39,16 @@
 
     <EditText
         android:id="@+id/et_watt"
-        android:layout_width="384dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:hint="@string/daya_alat_elektronik_watt"
         android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/et_jam"
@@ -45,10 +57,16 @@
 
     <EditText
         android:id="@+id/et_jam"
-        android:layout_width="384dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:hint="@string/pemakaian_alat_elektronik_jam_hari"
         android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/et_biaya"
@@ -57,10 +75,16 @@
 
     <EditText
         android:id="@+id/et_biaya"
-        android:layout_width="384dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:hint="@string/biaya_per_kwh_rp"
         android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tv_catatan"
@@ -73,6 +97,12 @@
         android:layout_height="wrap_content"
         android:text="@string/catatan"
         android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_bg"
+        android:paddingStart="20dp"
+        android:paddingEnd="2dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btn_screen_four"
@@ -80,12 +110,15 @@
 
     <Button
         android:id="@+id/btn_screen_four"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:text="@string/back_to_screen_3"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="256dp"/>
+        android:layout_marginBottom="220dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
