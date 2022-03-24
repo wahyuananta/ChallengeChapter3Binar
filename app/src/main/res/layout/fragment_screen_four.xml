@@ -8,10 +8,10 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tv_screen_3"
+        android:id="@+id/tv_screen_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Screen 3"
+        android:text="Screen 4"
         android:textStyle="bold"
         android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,86 +19,69 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <TextView
-        android:id="@+id/tv_nama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        android:text="Nama Kamu"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tv_detail"
-        android:layout_marginBottom="12dp"/>
-
-    <TextView
-        android:id="@+id/tv_detail"
+    <EditText
+        android:id="@+id/et_alat_elektronik"
         android:layout_width="384dp"
         android:layout_height="wrap_content"
-        android:text="Detail Peralatan"
-        android:textStyle="bold"
-        android:textSize="18sp"
+        android:hint="Nama Peralatan Elektronik"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tv_biaya_listrik"
+        app:layout_constraintBottom_toTopOf="@id/et_watt"
         android:layout_marginBottom="12dp"/>
 
-    <TextView
-        android:id="@+id/tv_biaya_listrik"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rincian Biaya Listrik"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tv_biaya_per_hari"
-        android:layout_marginBottom="12dp"/>
-
-    <TextView
-        android:id="@+id/tv_biaya_per_hari"
+    <EditText
+        android:id="@+id/et_watt"
         android:layout_width="384dp"
         android:layout_height="wrap_content"
-        android:text="Biaya Listrik Per Hari"
-        android:textStyle="bold"
-        android:textSize="16sp"
+        android:hint="Daya alat elektronik (Watt)"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tv_biaya_per_bulan"
+        app:layout_constraintBottom_toTopOf="@id/et_jam"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/et_jam"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:hint="Pemakaian alat elektronik (Jam/Hari)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/et_biaya"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/et_biaya"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:hint="Biaya Per kWh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_catatan"
         android:layout_marginBottom="12dp"/>
 
     <TextView
-        android:id="@+id/tv_biaya_per_bulan"
+        android:id="@+id/tv_catatan"
         android:layout_width="384dp"
         android:layout_height="wrap_content"
-        android:text="Biaya Listrik Per Bulan"
+        android:text="  *Catatan \n
+- Daya Listrik 450 watt Subsidi : Rp 169/kWh \n
+- Daya Listrik 900 watt : Rp 1352/kWh \n
+- Daya Listrik 1300 watt+ : Rp 144.7/kWh \n
+- Daya Listrik Bisnis : Rp 1114.74/kWh"
         android:textStyle="bold"
-        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tv_biaya_Per_Tahun"
-        android:layout_marginBottom="12dp"/>
-
-    <TextView
-        android:id="@+id/tv_biaya_Per_Tahun"
-        android:layout_width="384dp"
-        android:layout_height="wrap_content"
-        android:text="Biaya Listrik Per Tahun"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_screen_3"
-        android:layout_marginBottom="12dp"/>
+        app:layout_constraintBottom_toTopOf="@id/btn_screen_4"
+        android:layout_marginBottom="32dp" />
 
     <Button
-        android:id="@+id/btn_screen_3"
+        android:id="@+id/btn_screen_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go To Screen 4"
-        app:layout_constraintTop_toBottomOf="@id/tv_screen_3"
+        android:text="Back To Screen 3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="256dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
