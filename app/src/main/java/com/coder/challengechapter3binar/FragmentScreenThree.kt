@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.coder.challengechapter3binar.databinding.FragmentScreen3Binding
+import com.coder.challengechapter3binar.databinding.FragmentScreenThreeBinding
 
 class FragmentScreenThree : Fragment() {
-    private var _binding: FragmentScreen3Binding? = null
+    private var _binding: FragmentScreenThreeBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -16,7 +16,7 @@ class FragmentScreenThree : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentScreen3Binding.inflate(inflater, container, false)
+        _binding = FragmentScreenThreeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
