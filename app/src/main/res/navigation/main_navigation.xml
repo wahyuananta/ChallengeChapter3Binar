@@ -34,7 +34,6 @@
         <argument
             android:name="nama"
             app:argType="string"
-            app:nullable="true"
             android:defaultValue="Nama Kamu" />
         <argument
             android:name="parcelableBiayaListrik"
@@ -53,7 +52,6 @@
         <argument
             android:name="namaKamu"
             app:argType="string"
-            app:nullable="true"
             android:defaultValue="Nama Kamu" />
     </fragment>
 </navigation>
