@@ -8,7 +8,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tv_screen_2"
+        android:id="@+id/tv_screen_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Screen 2"
@@ -25,17 +25,17 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_screen_2"
+        app:layout_constraintBottom_toTopOf="@id/btn_screen_two"
         android:layout_marginBottom="12dp"
         android:hint="Masukkan Nama"
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/btn_screen_2"
+        android:id="@+id/btn_screen_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go To Screen 3"
-        app:layout_constraintTop_toBottomOf="@id/tv_screen_2"
+        app:layout_constraintTop_toBottomOf="@id/tv_screen_two"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>

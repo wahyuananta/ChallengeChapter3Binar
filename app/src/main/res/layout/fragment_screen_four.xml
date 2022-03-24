@@ -8,7 +8,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tv_screen_4"
+        android:id="@+id/tv_screen_four"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Screen 4"
@@ -24,6 +24,7 @@
         android:layout_width="384dp"
         android:layout_height="wrap_content"
         android:hint="Nama Peralatan Elektronik"
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/et_watt"
@@ -34,6 +35,7 @@
         android:layout_width="384dp"
         android:layout_height="wrap_content"
         android:hint="Daya alat elektronik (Watt)"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/et_jam"
@@ -44,6 +46,7 @@
         android:layout_width="384dp"
         android:layout_height="wrap_content"
         android:hint="Pemakaian alat elektronik (Jam/Hari)"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/et_biaya"
@@ -53,7 +56,8 @@
         android:id="@+id/et_biaya"
         android:layout_width="384dp"
         android:layout_height="wrap_content"
-        android:hint="Biaya Per kWh"
+        android:hint="Biaya Per kWh (Rp)"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tv_catatan"
@@ -71,11 +75,11 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn_screen_4"
+        app:layout_constraintBottom_toTopOf="@id/btn_screen_four"
         android:layout_marginBottom="32dp" />
 
     <Button
-        android:id="@+id/btn_screen_4"
+        android:id="@+id/btn_screen_four"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back To Screen 3"

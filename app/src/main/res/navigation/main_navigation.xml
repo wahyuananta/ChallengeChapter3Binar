@@ -31,6 +31,16 @@
         <action
             android:id="@+id/action_fragmentScreenThree_to_fragmentScreenFour"
             app:destination="@id/fragmentScreenFour" />
+        <argument
+            android:name="nama"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Nama Kamu" />
+        <argument
+            android:name="parcelableBiayaListrik"
+            app:argType="com.coder.challengechapter3binar.BiayaListrik"
+            app:nullable="true"
+            android:defaultValue="@null" />
     </fragment>
     <fragment
         android:id="@+id/fragmentScreenFour"
@@ -40,5 +50,10 @@
         <action
             android:id="@+id/action_fragmentScreenFour_to_fragmentScreenThree"
             app:destination="@id/fragmentScreenThree" />
+        <argument
+            android:name="namaKamu"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Nama Kamu" />
     </fragment>
 </navigation>

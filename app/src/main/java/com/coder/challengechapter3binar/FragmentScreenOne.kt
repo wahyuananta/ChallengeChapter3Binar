@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.coder.challengechapter3binar.databinding.FragmentScreenOneBinding
 
 class FragmentScreenOne : Fragment() {
@@ -22,6 +23,10 @@ class FragmentScreenOne : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.btnScreenOne.setOnClickListener {
+            it.findNavController().navigate(R.id.action_fragmentScreenOne_to_fragmentScreenTwo)
+        }
     }
 
     override fun onDestroy() {
