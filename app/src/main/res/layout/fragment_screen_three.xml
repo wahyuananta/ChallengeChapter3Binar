@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="12dp"/>
 
     <TextView
         android:id="@+id/tv_nama"
@@ -36,6 +36,8 @@
         android:textStyle="bold"
         android:textSize="24sp"
         android:text="@string/nama_kamu"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tv_detail"
@@ -48,6 +50,7 @@
         android:text="@string/detail_peralatan"
         android:textStyle="bold"
         android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:background="@drawable/edit_text_bg"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
@@ -65,6 +68,8 @@
         android:text="@string/rincian_biaya_listrik"
         android:textStyle="bold"
         android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tv_biaya_per_hari"
@@ -77,6 +82,7 @@
         android:text="@string/biaya_listrik_per_hari"
         android:textStyle="bold"
         android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:background="@drawable/edit_text_bg"
         android:paddingStart="15dp"
         android:paddingEnd="5dp"
@@ -94,6 +100,7 @@
         android:text="@string/biaya_listrik_per_bulan"
         android:textStyle="bold"
         android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:background="@drawable/edit_text_bg"
         android:paddingStart="15dp"
         android:paddingEnd="5dp"
@@ -111,6 +118,7 @@
         android:text="@string/biaya_listrik_per_tahun"
         android:textStyle="bold"
         android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:background="@drawable/edit_text_bg"
         android:paddingStart="15dp"
         android:paddingEnd="5dp"

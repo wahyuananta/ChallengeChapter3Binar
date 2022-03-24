@@ -27,7 +27,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="12dp"/>
 
     <EditText
         android:id="@+id/et_nama"
@@ -39,6 +39,7 @@
         android:layout_marginBottom="12dp"
         android:hint="@string/masukkan_nama"
         android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:background="@drawable/edit_text_bg"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
