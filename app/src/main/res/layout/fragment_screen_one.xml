@@ -7,6 +7,38 @@
     tools:context=".FragmentScreenOne">
 
     <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:src="@drawable/header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/header" />
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_logo_pln"
+        app:layout_constraintTop_toBottomOf="@id/tv_screen_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_screen_one"
+        android:contentDescription="@string/image_pln" />
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="@string/melayani_dengan_sepenuh_hati"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_screen_one"/>
+
     <TextView
         android:id="@+id/tv_screen_one"
         android:layout_width="wrap_content"
@@ -14,6 +46,7 @@
         android:text="@string/screen_1"
         android:textStyle="bold"
         android:textSize="24sp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

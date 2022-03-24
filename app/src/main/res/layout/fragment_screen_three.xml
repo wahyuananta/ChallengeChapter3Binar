@@ -7,6 +7,15 @@
     tools:context=".FragmentScreenThree">
 
     <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:src="@drawable/header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/header_screen_3" />
+
     <TextView
         android:id="@+id/tv_screen_three"
         android:layout_width="wrap_content"
@@ -14,6 +23,7 @@
         android:text="@string/screen_3"
         android:textStyle="bold"
         android:textSize="24sp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,14 +49,14 @@
         android:textStyle="bold"
         android:textSize="18sp"
         android:background="@drawable/edit_text_bg"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tv_biaya_listrik"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="6dp"/>
 
     <TextView
         android:id="@+id/tv_biaya_listrik"
@@ -58,7 +68,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/tv_biaya_per_hari"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="6dp"/>
 
     <TextView
         android:id="@+id/tv_biaya_per_hari"
@@ -68,8 +78,8 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:background="@drawable/edit_text_bg"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp"
         android:paddingTop="6dp"
         android:paddingBottom="6dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,8 +95,8 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:background="@drawable/edit_text_bg"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp"
         android:paddingTop="6dp"
         android:paddingBottom="6dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,8 +112,8 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:background="@drawable/edit_text_bg"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="5dp"
         android:paddingTop="6dp"
         android:paddingBottom="6dp"
         app:layout_constraintStart_toStartOf="parent"

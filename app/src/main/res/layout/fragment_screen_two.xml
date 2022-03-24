@@ -7,6 +7,15 @@
     tools:context=".FragmentScreenTwo">
 
     <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:src="@drawable/header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/header_screen_2" />
+
     <TextView
         android:id="@+id/tv_screen_two"
         android:layout_width="wrap_content"
@@ -14,6 +23,7 @@
         android:text="@string/screen_2"
         android:textStyle="bold"
         android:textSize="24sp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
