@@ -45,7 +45,7 @@ class FragmentScreenThree : Fragment() {
             val biayaPerBulan = biayaPerHari * 30
             val biayaPerTahun = biayaPerHari * 365
 
-            binding.tvNama.text = "Nama : $nama"
+            binding.tvNama.text = "Bapak/Ibu $nama"
             binding.tvDetail.text = "Peralatan elektronik $peralatan dengan daya $watt watt dan pemakaian selama $jam jam/hari untuk tarif listrik Rp$biaya/kWh."
             binding.tvBiayaPerHari.text = "Biaya Listrik Per Hari Sebesar Rp${biayaPerHari.toInt()}"
             binding.tvBiayaPerBulan.text = "Biaya Listrik Per Bulan Sebesar Rp${biayaPerBulan.toInt()}"
